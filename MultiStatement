@@ -1,0 +1,26 @@
+
+public class MultiStatement 
+{
+	public static void main(String[] args) 
+	{
+		int a=2,b=3,c;
+		c=a+b;
+		System.out.println(c);
+	//  methodA(int a)
+		methodA(a);	
+		
+	}
+	
+	static void methodA(int a)
+	{
+		System.out.println("Inside methodA " + a);
+		
+	//  methodB(int a,)
+		methodB(10,12.5,'s',"abc");
+	}
+	
+	static void methodB(int a,double b,char c, String str)
+	{
+		System.out.println("Inside methodB" +" "+a+"  " +b+" "+c +"  "+ str);
+	}
+}
