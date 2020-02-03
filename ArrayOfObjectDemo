@@ -1,0 +1,13 @@
+
+public class ArrayOfObjectDemo
+{
+	public static void main(String[] args) 
+	{
+		Object[] a = {5,12.5,'S',"Hello"};
+		
+		for (Object object : a) 
+		{
+			System.out.println(object);
+		}
+	}
+}
