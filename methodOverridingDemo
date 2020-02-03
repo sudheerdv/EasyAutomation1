@@ -1,0 +1,17 @@
+
+public class methodOverridingDemo 
+{
+	public static void main(String[] args) 
+	{
+		//Two classes will be there 1.Caar.java  , 2.Benz.java
+		
+		caar c=new caar();
+		c.startCar();
+		
+		//method overriding
+		Benz b=new Benz();
+		b.startCar();
+		
+	}	
+
+}
