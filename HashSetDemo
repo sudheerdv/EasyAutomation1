@@ -1,0 +1,28 @@
+import java.util.Collection;
+import java.util.HashSet;
+
+public class HashSetDemo 
+{
+	public static void main(String[] args) 
+	{	
+		//HashSet is similar to ArrayList but the difference is
+		//HashSet does not have any index.
+		//HashSet will not preserve the order of insertion , i.e it will store randomly
+		
+		//HashSet<String> hs = new HashSet<String>();
+		
+		//Modified with below Syntax
+		Collection<String> hs=new HashSet<String>();
+		
+		hs.add("My");
+		hs.add("Name");
+		hs.add("Is");
+		hs.add("Sudheer");		
+		
+		for(String temp:hs)
+		{
+			System.out.println(temp);
+		}	
+		
+	}
+}
