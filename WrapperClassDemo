@@ -1,0 +1,29 @@
+
+public class WrapperClassDemo 
+{
+  public static void main(String[] args)   
+  {
+	  
+	  // Java is not  100% object oriented 
+	  // because we are going to use primitive data type which is not object 
+	  // to over come this we use wrapper class
+	  // int -> Integer(wrapper class)
+	   
+	  int a =10;
+	  Integer obj;  //Integer is wrapper of int
+	  obj = a;
+	  
+	  System.out.println("Primitive type " + a);
+	  System.out.println("object type " + obj);
+	  
+	  System.out.println();
+	//  Converting wrapper class(object) to primitive type
+	  Integer obj2=new Integer(20);
+	  int b;
+	  b=obj2;
+	  
+	  System.out.println("Object type = " + obj2);
+	  System.out.println("Primitive type= " + b );
+	  
+  }
+}
