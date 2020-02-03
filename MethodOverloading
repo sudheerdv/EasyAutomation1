@@ -1,0 +1,38 @@
+class car1
+{
+	public void carDetails()
+	{
+		System.out.println("carDetails without any parameter");
+	}	
+	public void carDetails(int a)
+	{
+		System.out.println("carDetails with one parameter " + a);
+	}
+	public void carDetails(double b)
+	{
+		System.out.println("carDetails with double parameter " + b);
+	}
+	public void carDetails(int c,int d)
+	{
+		System.out.println("carDetails with int & int any parameter " + c +" "+ d);
+	}
+	public void carDetails(String x ,int y)
+	{
+		System.out.println("carDetails with String & int parameters " + x +" "+ y);
+	}
+	
+}
+
+public class MethodOverloading 
+{
+	public static void main(String[] args) 
+	{
+		car1 c1=new car1();		
+
+		c1.carDetails();
+		c1.carDetails(10);		
+		c1.carDetails(15.5);
+		c1.carDetails(20, 40);
+		c1.carDetails("benzx :", 1000);		
+	}
+}
