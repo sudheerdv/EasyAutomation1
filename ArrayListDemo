@@ -1,0 +1,30 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+public class ArrayListDemo 
+{
+	public static void main(String[] args)
+	{
+		java.util.List<Integer> list =new ArrayList<Integer>();	    
+		
+		list.add(2);
+		list.add(6);
+		list.add(8);
+		list.add(10);
+		
+		/*System.out.println(list.get(0));
+		System.out.println(list.get(3));*/
+		
+		//Iterator		
+		for (int i = 0; i < list.size(); i++)
+		{
+			System.out.println(list.get(i));
+		}
+		
+		//for each
+		for(Integer temp:list)
+		{
+			System.out.println(temp);
+		}
+	}
+}
