@@ -1,0 +1,13 @@
+
+public class LocalAndInstanceVariables 
+{
+	static int a =5; //Variable declared inside class but outside method
+	
+	public static void main(String[] args)
+	{
+		int b =10;  // Variable declared  inside method is called local variable
+		
+		System.out.println(a);
+		System.out.println(b);
+	}
+}
