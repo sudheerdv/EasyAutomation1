@@ -1,0 +1,90 @@
+Benz.java 
+
+public class Benz extends caar
+{
+	public void startCar()
+	{
+		System.out.println("Starting car in Benz class");
+	}
+
+}
+
+Cars.java
+
+public class caar
+{
+	String carmodel;
+	
+	public void startCar()
+	{
+		System.out.println("Starting car in Car class");
+	}
+}
+
+CarDemo.java
+
+
+public class CarDemo 
+{
+	public static void main(String[] args)
+	{
+	car maruthi =	new car();
+	car benz =	new car();
+	car bmw =	new car();
+	
+	//maruthi
+	maruthi.model = "Swift VDI";
+	maruthi.cost  = 800000;
+	maruthi.color = "Red";
+	
+	maruthi.startcar();
+	maruthi.stopCar();
+	maruthi.carDetails();
+	System.out.println(" -------------");
+	//benz
+	benz.model ="A Class";
+	benz.cost  =3500000;
+	benz.color ="Black";
+	
+	benz.startcar();
+	benz.stopCar();
+	benz.carDetails();
+	System.out.println(" -------------");
+	
+	//bmw	
+	bmw.model ="Classic";
+	bmw.cost  =4000000;
+	bmw.color ="Blue";
+	
+	bmw.startcar();
+	bmw.stopCar();
+	bmw.carDetails();
+	}
+}
+
+//Car template class
+class car
+{
+	String model;
+	int cost;
+	String color;
+	
+	public void startcar()
+	{
+	
+		System.out.println(model + "     Car started ");
+	}
+	
+	public void stopCar()
+	{
+		System.out.println(model + "     Car stopped");
+	}
+	
+	public void carDetails()
+	{
+		System.out.println("Car model : " + model);
+		System.out.println("Car Cost  : " + cost);
+		System.out.println("Car color : " + color);
+	}
+}
+  
