@@ -1,0 +1,35 @@
+
+public class StringDemo 
+{
+	public static void main(String[] args) 
+	{
+		String s1 ="My Name is Sudheer";
+		String[] s2 =s1.split(" ");
+		
+		//Substring
+		String s10=s1.substring(11);
+		System.out.println(s10);
+		
+		//IndexOf
+		System.out.println(s1.indexOf("Name"));
+		System.out.println(s1.indexOf("webDriver"));
+		
+		System.out.println();
+		
+		for(String temp : s2)
+		{
+			System.out.println(temp);
+		}
+		
+		System.out.println();
+		
+		String s3="How-are-you-peoples ";
+		String[] s4=s3.split("-");
+		
+		for(String temp1:s4)
+		{
+			System.out.println(temp1);
+		}
+	}
+
+}
